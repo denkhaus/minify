@@ -34,6 +34,8 @@ func main() {
 					return errors.Annotate(err, "write to stdout")
 				}
 			}
+
+			return nil
 		}
 
 		return errors.New("no flag defined")
